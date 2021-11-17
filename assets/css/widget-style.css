@@ -1,0 +1,1007 @@
+/*--------------------------------------------------------------============================================================
+/*==============================
+[Table of contents]
+
+WIDGET STYLESHEET
+----------------------------------
+BUTTON
+DUAL HEADING
+BREADCRUMB
+CONTACT FORM
+ANIMATED TEXT
+PRICING BOX
+PROGRESS BAR
+SIDEBAR WIDGET
+
+=============================================================--------------------------------------------------------------*/
+
+/*---------------------------------------------------
+BUTTON
+----------------------------------------------------*/
+.sakib-button {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -ms-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+a.sakib-button{
+  -webkit-transition: all 0.4s ease-in-out !important;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -ms-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+.sakib-button-sm {
+  padding: 10px 21px 10px 21px;
+  font-size: 13px;
+  line-height: 1;
+}
+.sakib-button-md {
+  padding: 14px 22px 14px 22px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.sakib-button-lg {
+  padding: 18px 40px 18px 40px;
+  font-size: 14px;
+  line-height: 1.3333;
+}
+.sakib-button-ex {
+  padding: 23px 40px 23px 40px;
+  font-size: 15px;
+  line-height: 1.3333;
+}
+.sakib-button-block {
+  font-size: 15px;
+  line-height: 1;
+  padding: 14px 22px 14px 22px;
+  width: 100%;
+  text-align: center;
+}
+.sakib-button-text {
+  display: inline-block;
+  width: 100%;
+}
+
+.sakib-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  font-weight: 400;
+}
+.sakib-button-style1-bottom,
+.sakib-button-style1-top,
+.sakib-button-style1-right,
+.sakib-button-style1-left,
+.sakib-button-style2-shutouthor,
+.sakib-button-style2-shutoutver,
+.sakib-button-style2-shutinhor,
+.sakib-button-style2-shutinver,
+.sakib-button-style2-scshutouthor,
+.sakib-button-style2-scshutoutver,
+.sakib-button-style2-dshutinhor,
+.sakib-button-style2-dshutinver,
+.sakib-button-style3-radialin,
+.sakib-button-style3-radialout,
+.sakib-button-style3-rectin,
+.sakib-button-style3-rectout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.sakib-button-style1-bottom:before,
+.sakib-button-style1-top:before,
+.sakib-button-style1-right:before,
+.sakib-button-style1-left:before,
+.sakib-button-style2-shutinhor:before,
+.sakib-button-style2-shutinver:before,
+.sakib-button-style2-shutouthor:before,
+.sakib-button-style2-shutoutver:before,
+.sakib-button-style2-scshutouthor:before,
+.sakib-button-style2-scshutoutver:before,
+.sakib-button-style2-dshutinhor:before,
+.sakib-button-style2-dshutinver:before,
+.sakib-button-style3-radialin:before,
+.sakib-button-style3-radialout:before,
+.sakib-button-style3-rectin:before,
+.sakib-button-style3-rectout:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.50s;
+  transition-duration: 0.50s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.sakib-button-style3-radialin:before,
+.sakib-button-style3-radialout:before {
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.sakib-button-style3-radialin:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.sakib-button-style3-rectin:before,
+.sakib-button-style3-rectout:before {
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.sakib-button-style3-rectout:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.sakib-button-style3-rectout:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.sakib-button-style3-rectin:hover:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.sakib-button-style3-radialout:hover:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.sakib-button-style3-radialin:hover:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.sakib-button-style1-top:before {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.sakib-button-style1-right:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+.sakib-button-style1-left:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.sakib-button-style2-shutouthor:before,
+.sakib-button-style2-scshutoutver:before{
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.sakib-button-style2-shutoutver:before,
+.sakib-button-style2-scshutouthor:before{
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.sakib-button-style2-shutinhor:before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+}
+.sakib-button-style2-shutinver:before{
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+}
+.sakib-button-style1-bottom:hover:before,
+.sakib-button-style1-top:hover:before{
+-webkit-transform: scaleY(1);
+transform: scaleY(1);
+}
+.sakib-button-style1-left:hover:before,
+.sakib-button-style1-right:hover:before,
+.sakib-button-style2-shutouthor:hover:before,
+.sakib-button-style2-shutoutver:hover:before{
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+}
+.sakib-button-style2-shutinhor:hover:before{
+-webkit-transform: scaleX(0);
+transform: scaleX(0);
+}
+.sakib-button-style2-shutinver:hover:before{
+-webkit-transform: scaleY(0);
+transform: scaleY(0);
+}
+.sakib-button-style2-scshutouthor:hover:before{
+-webkit-transform: scaleX(0.9);
+transform: scaleX(0.9);
+}
+.sakib-button-style2-scshutoutver:hover:before{
+-webkit-transform: scaleY(0.8);
+transform: scaleY(0.8);
+}
+/*Diagonal*/
+.sakib-button-style2-dshutinhor:before,
+.sakib-button-style2-dshutinver:before {
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 0%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.sakib-button-style2-dshutinver:before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.sakib-button-style2-dshutinhor:hover:before,
+.sakib-button-style2-dshutinver:hover:before{
+  height: 220%;
+}
+
+/*---------------------------------------------------
+CONTACT FORM
+----------------------------------------------------*/
+.sakib--contactform-wraper.absolute {
+  position: relative;
+}
+
+.sakib--contactform-wraper.absolute input[type=submit],
+.sakib--contactform-wraper.absolute button[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*---------------------------------------------------
+DUAL HEADING
+----------------------------------------------------*/
+/*---------------------------------------------------
+DUAL HEADDING
+----------------------------------------------------*/
+.sakib-dual-heading .sakib-dual-heading-wrapper {
+  padding: 5px;
+}
+
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-description {
+  line-height: 26px;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  font-weight: 400;
+}
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-icon {
+  display: inline-block;
+}
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-icon i {
+  font-size: 36px;
+}
+
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-title {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-title {
+  font-size: 30px;
+  color: #132c47;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-title .first-heading,
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-title .second-heading {
+  padding: 15px 10px;
+}
+
+.sakib-dual-heading .sakib-dual-heading-wrapper .sakib-dual-heading-title span {
+  color: #132c47;
+}
+
+/*---------------------------------------------------
+BREADCRUMB
+----------------------------------------------------*/
+
+ul.sakib-breadcrumbs {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.sakib-breadcrumbs li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+ul.sakib-breadcrumbs li:last-child {
+	margin: 0;
+}
+
+ul.sakib-breadcrumbs li a,
+ul.sakib-breadcrumbs li span.sakib-breadcrumbs-text,
+ul.sakib-breadcrumbs li span.sakib-breadcrumbs-separator-icon {
+	display: block;
+}
+
+ul.sakib-breadcrumbs li span.sakib-breadcrumbs-text {
+	-webkit-transition: all .4s;
+	        transition: all .4s;
+}
+
+span.sakib-breadcrumbs-home-icon {
+	margin-right: 10px;
+}
+/*---------------------------------------------------
+ANIMATED TEXT
+----------------------------------------------------*/
+.morphext > .animated {
+  display: inline-block;
+}
+/* morphext style end*/
+
+.sakib-animated-text-align-left{
+  text-align: left;
+}
+
+.sakib-animated-text-align-center{
+  text-align: center;
+}
+
+.sakib-animated-text-align-right{
+  text-align: right;
+}
+
+.sakib-typed-strings{
+  margin: 0;
+}
+
+.sakib-animated-text-pre-heading,
+.sakib-animated-text-animated-heading,
+.sakib-animated-text-post-heading {
+	font-size: 30px;
+	font-weight: 600;
+}
+/*---------------------------------------------------
+/*---------------------------------------------------
+PRICING BOX
+----------------------------------------------------*/
+
+/* Pricing Menu Start */
+
+.sakib-pricing-list-wrapper.border_bottom .sakib-pricing-list-item:last-child {
+  border-bottom: none !important;
+}
+
+.sakib-pricing-list-item.yes{
+  display: flex;
+}
+
+.sakib-pricing-list-item-thumbnail{
+  overflow: hidden;
+}
+
+.sakib-pricing-list-item-thumbnail img{
+  height: 100% !important;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.sakib-pricing-title {
+  display: flex;
+  align-items: center;
+}
+.sakib-pricing-title .sakib-pricing-list-item-price {
+    margin-left: auto;
+}
+
+.sakib-pricing-list-item-content-title{
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sakib-pricing-list-item-content-description{
+  margin: 0;
+}
+
+.sakib-pricing-list-item-price span{
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.sakib-pricing-list-item-content-action{
+  display: inline-block;
+  transition: all .3s ease;
+}
+
+.sakib-pricing-list-item-content-conntector {
+  border-bottom: 1px dashed;
+  height: 1px;
+  flex-grow: 1;
+  align-self: center;
+  margin: 0 15px;
+}
+
+/* Pricing List End */
+/* Pricing Table Start */
+
+.left{
+  text-align: left;
+}
+
+.left .sakib-pricing-table-features li{
+  justify-content: flex-start;
+}
+
+.left .price-box{
+  margin-right: auto;
+}
+
+.center{
+  text-align: center;
+}
+
+.center.sakib-pricing-table-features li{
+  justify-content: center;
+}
+
+.center .price-box{
+  margin: 0 auto;
+}
+
+.right{
+  text-align: right;
+}
+
+.right .sakib-pricing-table-features li{
+  justify-content: flex-end;
+}
+
+.right .price-box{
+  margin-left: auto;
+}
+
+.sakib-pricing-table-header {
+  position: relative;
+  z-index: -1;
+}
+
+.sakib-pricing-table-header .sakib-pricing-table-header-curved svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.sakib-pricing-table-title{
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sakib-pricing-table-subtitle{
+  margin: 0 0 10px 0;
+}
+
+.price-box{
+  position: relative;
+}
+.sakib-pricing-table-price{
+  position: relative;
+}
+.sakib-pricing-table-price.sakib-discount-price-yes{
+  display: inline-flex;
+  align-items: flex-end;
+}
+.sakib-pricing-table-price.sakib-discount-price-yes .sakib-pricing-table-regular-price{
+  text-decoration: line-through;
+  font-size: 20px;
+  color: #e5e5e5;
+  line-height: 2.1em;
+}
+.sakib-pricing-table-price svg{
+  position: absolute;
+}
+
+.sakib-pricing-table-wrapper .sakib-pricing-table-price p.sakib-pricing-table-new-price {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -3.2px;
+}
+
+.sakib-pricing-table-wrapper .sakib-pricing-table-price span.sakib-price-period {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.sakib-pricing-table-price p{
+  margin: 0;
+}
+.price-box p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 100%;
+}
+
+.sakib-pricing-table-features{
+  margin: 0;
+  padding: 0;
+}
+
+.sakib-pricing-table-features li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+.list-border-bottom li:not(:last-child){
+  border-bottom: 1px solid #ff5985;
+}
+
+.sakib-pricing-table-features li .sakib-pricing-li-icon{
+  margin-right: 7px;
+}
+
+.sakib-pricing-table-action {
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 1;
+  display: inline-block;
+}
+
+.sakib-pricing-table-badge-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all .3s ease;
+}
+
+.sakib-pricing-table-wrapper{
+  transition: all .3s ease;
+}
+
+.sakib-pricing-table-wrapper.transition_top{
+  transition: all .3s ease;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.sakib-pricing-table-wrapper.transition_top:hover{
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+}
+
+.sakib-pricing-table-wrapper.transition_bottom{
+  transition: all .3s ease;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.sakib-pricing-table-wrapper.transition_bottom:hover{
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+}
+
+.sakib-pricing-table-wrapper.transition_zoom{
+  transition: all .3s ease;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.sakib-pricing-table-wrapper.transition_zoom:hover{
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+}
+
+.sakib-pricing-table-wrapper .text-badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #13c83a;
+  padding: 13px 50px;
+  width: 160px;
+    text-align: center;
+  -webkit-transform: rotate(45deg) translate(40px, -22px);
+          transform: rotate(45deg) translate(40px, -22px);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.sakib-pricing-table-wrapper .icon-badge {
+  position: absolute;
+  padding: 15px 10px;
+  border-radius: 0 0 40px 40px;
+  background: #13c83a;
+  right: 30px;
+  top: 0;
+  z-index: 2;
+}
+
+.sakib-pricing-table-promo-label{
+  display: block;
+}
+.sakib-pricing-table-currency{
+  position: relative;
+}
+
+.sakib-pricing-table-price-subtitle{
+  display: block;
+}
+
+/*---------------------------------------------------
+PROGRESS BAR
+----------------------------------------------------*/
+.ldBar {
+  position:relative;
+}
+
+.ldBar.label-center > .ldBar-label {
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  text-shadow:0 0 3px #ffffff;
+}
+
+.sakib-progress-bar .ldBar-label:after {
+  content:"%";display:inline;
+  position: absolute;
+}
+
+.ldBar.no-percent .ldBar-label:after {
+  content:""
+}
+
+
+[class*="sakib-progress-bar-"].line {
+  position: relative;
+}
+
+[class*="sakib-progress-bar-"].line .ldBar-label {
+position: absolute;
+top: -12px;
+right: 0;
+}
+
+[class*="sakib-progress-bar-"].line-bubble {
+position: relative;
+}
+
+[class*="sakib-progress-bar-"].line-bubble .ldBar-label {
+position: absolute;
+left: 0;
+top: 0%;
+width: 50px;
+height: 50px;
+-webkit-transform: translate(-50%, 25%);
+transform: translate(-50%, 25%);
+background-color: #ccc;
+line-height: 27px;
+}
+
+[class*="sakib-progress-bar-"].circle {
+position: relative;
+}
+
+[class*="sakib-progress-bar-"].circle .ldBar-label {
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+[class*="sakib-progress-bar-"].circle h3 {
+position: absolute;
+bottom: -20px;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+[class*="sakib-progress-bar-"].fan {
+position: relative;
+}
+
+[class*="sakib-progress-bar-"].fan svg {
+margin-top: -40%;
+}
+
+[class*="sakib-progress-bar-"].fan h3 {
+position: absolute;
+bottom: -20px;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+[class*="sakib-progress-bar-"].fan .ldBar-label {
+position: absolute;
+left: 50%;
+-webkit-transform: translate(-50%, -20%);
+transform: translate(-50%, -20%);
+font-size: 30px;
+bottom: 7%;
+}
+
+[class*="sakib-progress-bar-"].fan .left-title {
+position: absolute;
+left: 0;
+bottom: -10px;
+}
+
+[class*="sakib-progress-bar-"].fan .right-title {
+position: absolute;
+bottom: -10px;
+right: 0;
+}
+
+.sakib-progress-bar svg:not(:root) {
+overflow: hidden;
+height: inherit;
+}
+
+.sakib-progress-bar-title {
+font-size: 16px;
+font-weight: 600;
+}
+
+
+
+/* category css */
+.ast-separate-container {
+  background-color: #F9F5F0;
+}
+
+.sakib-tab-section{
+padding: 70px 0;
+background-color: #F9F5F0;
+}
+.sakib-tab-container{
+max-width: 1170px;
+margin: 0 auto;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+/* Nav tabs*/
+
+ul.sakib-tabs-nav {
+margin: 0 0 40px;
+padding: 0;
+list-style: none;
+}
+
+ul.sakib-tabs-nav li{
+display: inline-block;
+border: 1px solid #000;
+background: transparent;
+color: #000;
+margin-right: 10px;
+margin-bottom: 15px;
+}
+
+ul.sakib-tabs-nav  li a {
+  display: block;
+  padding: 6px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+
+}
+/* Active tab */
+
+.sakib-tabs-nav li.active {
+background: #000;
+color: #fff;
+border: 1px solid #fff;
+}
+
+.sakib-tabs-nav li.active a {
+color: inherit;
+}
+/* Tab content */
+
+.sakib-tab-item {
+  border-top: 1px solid #000;
+  padding: 30px;
+}
+.sakib-tab-item:last-child{
+border-bottom: 1px solid #000;
+}
+
+.sakib-tab-header {
+  display: flex;
+  justify-content: space-between;
+}
+.sakib-tab-header-left{
+flex: 0 0 50%;
+}
+.sakib-tab-header-left h3{
+font-size: 30px;
+font-weight: 400;
+margin: 0 0 25px;
+position: relative;
+line-height: 35px;
+}
+.sakib-tab-header-left h3:before{
+content: "";
+left: 0;
+bottom: -10px;
+width: 30px;
+height: 2px;
+position: absolute;
+background-color: #7073b6;
+}
+.sakib-tab-header-left p{
+color: #7472B2;
+margin: 0;
+text-transform: uppercase;
+}
+.sakib-tab-header-left h2, .sakib-tab-header-left h2 span.tprice{
+font-size: 40px;
+font-weight: 700;
+margin-top: 45px;
+}
+.sakib-tab-header-left h2 span{
+font-size: 16px;
+margin-left: 7px;
+font-weight: normal;
+}
+
+.sakib-tab-header-right{
+flex: 0 0 50%;
+}
+.sakib-tab-header-right ul{
+margin: 0;
+padding: 0;
+display: flex;
+list-style: none;
+
+}
+.sakib-tab-header-right ul li{
+flex: 0 0 25%;
+}
+.sakib-tab-header-right ul li {
+  box-sizing: border-box;
+  border: 1px solid black;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.sakib-tab-header-right p{
+margin: 0;
+margin-top: 10px;
+text-align: right;
+}
+.sakib-tab-header-right-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.sakib-tab-header-right-bottom-content h3{
+font-size: 22px;
+color: #F07F7F;
+font-weight: normal;
+line-height: 1;
+margin: 0 0 10px;
+}
+.sakib-tab-header-right-bottom-content h2{
+  font-size: 30px;
+  font-weight: 500;
+  height: 36px;
+  margin: 0;
+}
+.sakib-tab-header-right-bottom-content h2 span{
+font-size: 16px;
+font-weight: 400;
+}
+a.sakib-buy-btn.button {
+  width: 47%;
+  border: 2px solid #000000;
+  padding: 5px 10px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 15.4px;
+  text-decoration: none;
+  background-color: transparent ;
+}
+.sakib-tab-header-right ul li.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+a.added_to_cart.wc-forward {
+  background-color: transparent;
+  color: #222;
+  font-weight: 700;
+  border: 2px solid #222;
+  padding: 2px 12px;
+}
+/* Responsive css */
+
+/*For Wide Mobile Layout*/
+@media (max-width: 767px) {
+
+  .sakib-tab-header{
+      display: block;
+  }
+  .sakib-tab-header-right-bottom{
+      display: block
+  }
+  a.sakib-buy-btn{
+      width: 100%;
+      margin-top: 20px
+  }
+
+}
+
+  /*For 320-384px up Mobile Layout*/
+@media (max-width: 479px) {
+  .hero-content p{
+      font-size: 20px
+  }
+  .main-header h2 {
+      font-size: 26px;
+  }
+
+}
